@@ -16,7 +16,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -24,10 +23,69 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
+/* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Rockwell&display=swap');
+* {
+    font-family: "Rockwell", serif;
+}
+
+/* text animation - title */
+.unhide {
+  opacity: 0;
+  animation: unhide 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes unhide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 10;
+  }
+}
+
+/* auto font size by section */
+.section-1 {
+  font-size: 30px;
+}
+.section-2 {
+  font-size: 20px;
+}
+@media only screen and (min-width: 480px) {
+  .section-1 {
+    font-size: calc(30px + (60 - 30) * ((100vw - 480px) / (1400 - 480)));
+  }
+  .section-2 {
+    font-size: calc(20px + (40 - 20) * ((100vw - 480px) / (1400 - 480)));
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .section-1 {
+    font-size: 60px;
+  }
+  .section-2 {
+    font-size: 40px;
+  }
+}
+
+
+
+/* start of elements */
 body {
+    font-family: "Rockwell", serif;
+    text-align: center;
     line-height: 1;
     background-color: #000000;
     color: #ffffff;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+video {
+    display: block;
+    margin: 0 auto;
 }
 ol, ul {
     list-style: none;
