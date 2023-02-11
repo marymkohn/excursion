@@ -75,6 +75,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     font-family: "Rockwell", serif;
     text-align: center;
+    padding: 20px;
     line-height: 1;
     background-color: #000000;
     color: #ffffff;
