@@ -25,12 +25,12 @@ footer, header, hgroup, menu, nav, section {
 }
 
 /* Poppins font */
-@import url('https://fonts.googleapis.com/css2?family=Rockwell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
-    font-family: "Rockwell", serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* text animation - title */
+/* text animation */
 .unhide {
   opacity: 0;
   animation: unhide 5s;
@@ -69,24 +69,60 @@ footer, header, hgroup, menu, nav, section {
   }
 }
 
+/* logo and sign up bar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo img {
+  height: 40px;
+  float: left;
+}
+
+.company-name img {
+  height: 40px;
+  float: center;
+}
+
+.right-items {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up, .log-in {
+  background-color: #fff;
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  float: right;
+  margin-left: 20px;
+}
+
 
 
 /* start of elements */
 body {
-    font-family: "Rockwell", serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     padding: 20px;
-    line-height: 1;
+    line-height: 2;
     background-color: #000000;
     color: #ffffff;
 }
 img {
     display: block;
     margin: 0 auto;
+    padding: 20px;
 }
 video {
     display: block;
     margin: 0 auto;
+    padding: 20px;
 }
 ol, ul {
     list-style: none;
